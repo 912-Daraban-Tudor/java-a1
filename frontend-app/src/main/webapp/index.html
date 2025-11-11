@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Utility Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>String Utility Service</h1>
+            <p>Tomcat -> Jetty</p>
+        </header>
+        
+        <form id="stringForm">
+            
+            <label for="inputText">Your Text:</label>
+            <textarea id="inputText" name="inputText" placeholder="Paste your text here..."></textarea>
+            
+            <div class="form-controls">
+                
+                <div class="control-group">
+                    <label for="operation">Operation:</label>
+                    <select id="operation" name="operation">
+                        <option value="reverse">Reverse String</option>
+                        <option value="uppercase">To Uppercase</option>
+                        <option value="count">Count Words</option>
+                    </select>
+                </div>
+                
+                <button type="submit" id="submitButton">Process</button>
+            </div>
+
+        </form>
+
+        <section class="result-box">
+            <h2>Result:</h2>
+            <pre id="result">...</pre>
+        </section>
+        
+    </main>
+
+</body>
+</html>
